@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jsm174's Portfolio</title>
+  <style>
+    :root {
+      --bg: #111010;
+      --panel: #1b1818;
+      --muted: #c7baba;
+      --text: #f5f4f4;
+      --brand: #d84a4a;
+      --brand-700: #a83232;
+      --border: #3a2a2a;
+      --shadow: 0 6px 18px rgba(216,74,74,.2);
+      --radius: 16px;
+    }
+
+    * { 
+      box-sizing: border-box; 
+    }
+    
+    html, body { 
+      height: 100%; 
+    }
+    
+    body { 
+      margin: 0; 
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; 
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(216,74,74,.1), transparent 40%), var(--bg); 
+      color: var(--text); 
+    }
+    
+    a { 
+      color: inherit; 
+      text-decoration: none; 
+    }
+
+    .container { 
+      max-width: 1100px; 
+      margin: 0 auto; 
+      padding: 24px; 
+    }
+
+    .nav { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      margin-top: 8px; 
+    }
+    
+    .brand { 
+      display: flex; 
+      gap: 12px; 
+      align-items: center; 
+      font-weight: 700; 
+      letter-spacing: .2px; 
+      color: var(--brand); 
+      font-size: 18px; 
+    }
+    
+    .brand img { 
+      width: 48px; 
+      height: 48px; 
+      border-radius: 50%; 
+      border: 2px solid var(--brand); 
+      box-shadow: 0 2px 8px rgba(216,74,74,.3); 
+    }
+    
+    .nav a.button { 
+      padding: 10px 14px; 
+      background: #231d1d; 
+      border: 1px solid var(--border); 
+      border-radius: 12px; 
+      transition: .2s transform ease, .2s background-color ease; 
+      color: var(--brand); 
+    }
+    
+    .nav a.button:hover { 
+      transform: translateY(-1px); 
+      background: var(--brand); 
+      color: #fff; 
+    }
+
+    @media (max-width: 768px) {
+      .nav { 
+        gap: 8px; 
+      }
+      
+      .brand { 
+        font-size: 16px; 
+        gap: 8px; 
+      }
+      
+      .brand img { 
+        width: 40px; 
+        height: 40px; 
+      }
+      
+      .nav a.button { 
+        padding: 10px 16px; 
+        font-size: 14px; 
+      }
+      
+      .container { 
+        padding: 16px; 
+      }
+    }
+
+    .hero { 
+      padding: 40px 0 8px; 
+    }
+    
+    .hero h1 { 
+      font-size: clamp(28px, 3.4vw, 44px); 
+      margin: 0 0 6px; 
+      color: var(--brand); 
+    }
+    
+    .sub { 
+      color: var(--muted); 
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+      gap: 18px; 
+    }
+
+    .card { 
+      background: linear-gradient(180deg, #231d1d, #161212); 
+      border: 1px solid var(--border); 
+      border-radius: var(--radius); 
+      overflow: hidden; 
+      box-shadow: var(--shadow); 
+      position: relative; 
+      transition: transform .2s ease, box-shadow .2s ease; 
+    }
+    
+    .card:hover { 
+      transform: translateY(-4px); 
+      box-shadow: 0 12px 28px rgba(216,74,74,.35); 
+    }
+    
+    .card img { 
+      width: 100%; 
+      height: 160px; 
+      object-fit: cover; 
+      display: block; 
+    }
+    
+    .card img[src$=".svg"], 
+    .card img[src$=".png"], 
+    .card img[src$=".jpg"], 
+    .card img[src$=".webp"] { 
+      object-fit: contain; 
+      padding: 20px; 
+    }
+    
+    .content { 
+      padding: 14px 14px 16px; 
+    }
+    
+    .content h3 { 
+      margin: 0 0 6px; 
+      font-size: 18px; 
+      color: var(--brand); 
+    }
+    
+    .muted { 
+      color: var(--muted); 
+    }
+    
+    .desc { 
+      margin: 10px 0 12px; 
+      color: #e9dada; 
+      font-size: 14px; 
+      line-height: 1.4; 
+    }
+    
+    .contributor { 
+      color: var(--muted); 
+      font-size: 14px; 
+      font-weight: 400; 
+    }
+    
+    .tags { 
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 8px; 
+    }
+    
+    .tag { 
+      font-size: 12px; 
+      padding: 6px 10px; 
+      border-radius: 999px; 
+      background: #211a1a; 
+      border: 1px solid var(--border); 
+      color: #f3c2c2; 
+    }
+
+    .section-title { 
+      margin-top: 40px; 
+      font-size: 22px; 
+      border-bottom: 1px solid var(--brand); 
+      padding-bottom: 6px; 
+      color: var(--brand); 
+    }
+
+    .footer { 
+      text-align: center; 
+      color: var(--muted); 
+      margin: 36px 0 10px; 
+      font-size: 13px; 
+    }
+    
+    .footer a { 
+      color: var(--brand); 
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="nav">
+      <div class="brand">
+        <img src="https://avatars.githubusercontent.com/u/1197137?s=400&u=dbd469b1dc8781473446afe802a554f0bbf80bf3&v=4" alt="jsm174 profile">
+        jsm174's Portfolio
+      </div>
+      <nav>
+        <a href="#" class="button">Home</a>
+        <a href="https://github.com/jsm174" target="_blank" class="button">GitHub</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Projects, builds, and more.</h1>
+      <p class="sub">Hi, I'm Jason. I build software, create things, and have a passion for pinball.</p>
+    </section>
+
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+      <article class="card">
+        <a href="https://github.com/vpinball/vpinball" target="_blank">
+          <img src="images/visual-pinball.webp" alt="Visual Pinball Standalone">
+          <div class="content">
+            <h3>vpinball <span class="contributor">· Contributor</span></h3>
+            <p class="desc">Sub-project of VPX designed to run on non-Windows platforms.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="https://github.com/vpinball/pinmame" target="_blank">
+          <img src="images/vpinmame.webp" alt="libpinmame">
+          <div class="content">
+            <h3>libpinmame <span class="contributor">· Contributor</span></h3>
+            <p class="desc">Sub-project of PinMAME to be used as a library in third party projects such as Visual Pinball.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="https://github.com/jsm174/libdof" target="_blank">
+          <img src="images/direct-output-r3.webp" alt="libdof">
+          <div class="content">
+            <h3>libdof</h3>
+            <p class="desc">Cross platform port of the C# DirectOutput Framework.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="https://github.com/jsm174/vpcabs-zeb-encoder" target="_blank">
+          <img src="images/pinball-encoder.webp" alt="vpcabs-zeb-encoder">
+          <div class="content">
+            <h3>vpcab-zeb-encoder</h3>
+            <p class="desc">Remix of Zeb's Pinball Encoder firmware to support joystick button inputs.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="https://github.com/jsm174/TeensyStripController" target="_blank">
+          <img src="images/teensy-lc.webp" alt="TeensyStripController">
+          <div class="content">
+            <h3>TeensyStripController</h3>
+            <p class="desc">Remix of TeensyStripController to support Teensy LC devices using the Adafruit NeoPixel library.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="https://github.com/jsm174/vpxbct" target="_blank">
+          <img src="images/vpx-bct.webp" alt="vpxbct">
+          <div class="content">
+            <h3>vpxbct</h3>
+            <p class="desc">VPX Batocera Capture Tool - Capture backglass and table images using Batocera's built-in webserver.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="https://github.com/jsm174/vpx-editor" target="_blank">
+          <img src="images/vpx-editor.webp" alt="VPX Editor">
+          <div class="content">
+            <h3>VPX Editor</h3>
+            <p class="desc">Cross platform Visual Pinball Table Editor using Electron and vpxtool.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="https://github.com/jsm174/vpx-standalone-scripts" target="_blank">
+          <img src="images/vbscript.webp" alt="vpx-standalone-scripts">
+          <div class="content">
+            <h3>Table patches for VPX Standalone</h3>
+            <p class="desc">Collection of community-provided Visual Pinball table patches (primarily by @francisdb) needed for Visual Pinball Standalone.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="https://github.com/freezy/VisualPinball.Engine" target="_blank">
+          <img src="images/vpe.webp" alt="visual-pinball-engine">
+          <div class="content">
+            <h3>Visual Pinball Engine <span class="contributor">· Contributor</span></h3>
+            <p class="desc">An engine for creating and re-creating pinball machines, virtually.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="https://github.com/jsm174/puttycs" target="_blank">
+          <img src="images/putty.webp" alt="puttycs">
+          <div class="content">
+            <h3>PuTTYCS</h3>
+            <p class="desc">Small Windows utility to send commands to multiple PuTTY windows.</p>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <h2 class="section-title">Builds</h2>
+    <div class="grid">
+      <article class="card">
+        <a href="goonies/">
+          <img src="images/goonies.webp" alt="goonies-full-size-cabinet">
+          <div class="content">
+            <h3>Goonies Full-Size VPX Standalone Cabinet</h3>
+            <p class="desc">Visual Pinball cabinet running VPX Standalone on Batocera 42.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="https://github.com/jsm174/goonies-mini-vpx-standalone-batocera" target="_blank">
+          <img src="images/goonies-mini.webp" alt="goonies-mini-cabinet">
+          <div class="content">
+            <h3>Goonies Mini VPX Standalone Cabinet</h3>
+            <p class="desc">Remix of @phoenixfox's mini virtual pinball cabinet running VPX Standalone on Batocera 42.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="volley/">
+          <img src="images/volley.webp" alt="volley-pinball-restoration">
+          <div class="content">
+            <h3>Volley Pinball Restoration</h3>
+            <p class="desc">A restoration of a 1976 Gottlieb Volley pinball machine.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="rock/">
+          <img src="images/rock.webp" alt="rock-pinball-shop">
+          <div class="content">
+            <h3>Gottlieb Rock Shop Job</h3>
+            <p class="desc">Shopped out a Gottlieb Rock pinball machine for a friend - full cleaning, new rubbers, bulbs, and a bunch of fixes to the System 80 board to get it playing again.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="vpcabs/">
+          <img src="images/vpcabs.webp" alt="vpcab-repair">
+          <div class="content">
+            <h3>VPCabs "Pump Up The Pinball" Repair</h3>
+            <p class="desc">Bringing an early 2014 VPCabs "Pump Up The Pinball" machine back to life using VPX Standalone on Batocera 42.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="81-c10-stepside/">
+          <img src="images/81-c10-stepside.webp" alt="81-c10-stepside">
+          <div class="content">
+            <h3>1981 C10 Chevy Stepside Restoration</h3>
+            <p class="desc">Complete restoration of our Dad's 1981 Chevy Stepside with LS3 engine, T56 transmission, and full modernization.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="space-invaders/">
+          <img src="images/space-invaders.webp" alt="space-invaders-pinball">
+          <div class="content">
+            <h3>Bally Space Invaders Pinball</h3>
+            <p class="desc">1979 Bally Space Invaders Restoration Project</p>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <h2 class="section-title">Gists</h2>
+    <div class="grid">
+      <article class="card">
+        <a href="https://gist.github.com/jsm174/4bae7cb6989922c4c6251bc9a843f97b" target="_blank">
+          <img src="images/mission-pinball.webp" alt="Mission Pinball Gist">
+          <div class="content">
+            <h3>MPF 0.57.0 Mission Pinball - Installation on Orange PI 5</h3>
+            <p class="desc">How to install Mission Pinball on an Orange Pi 5. (As seen on @scottacus64's homebrew Cuphead)</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="https://gist.github.com/jsm174/19e9841174dada68d01026b2763f0f06" target="_blank">
+          <img src="images/batocera.webp" alt="Batocera Gist">
+          <div class="content">
+            <h3>Using Batocera 39 for a Visual Pinball Cabinet</h3>
+            <p class="desc">Tips for setting up Visual Pinball on three screens using Batocera 39.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="https://gist.github.com/jsm174/e5aa4ebe70052b5cf2ef49ab40c35dfb" target="_blank">
+          <img src="images/pinup-system.webp" alt="PinUP System Gist">
+          <div class="content">
+            <h3>VPX Standalone: Reverse Engineering PinUP Player</h3>
+            <p class="desc">Studying PinUP Player to provide initial PUP support in Visual Pinball Standalone.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="https://gist.github.com/jsm174/d8711b7ea4af4501090f96f1db808202" target="_blank">
+          <img src="images/pinscape.webp" alt="Pinscape Gist">
+          <div class="content">
+            <h3>Pinscape Pico Notes</h3>
+            <p class="desc">Notes on getting Pinscape working on macOS, which enabled adding support to libdof.</p>
+          </div>
+        </a>
+      </article>
+      
+      <article class="card">
+        <a href="https://gist.github.com/jsm174/120cf55041dac5afa57f4e93a011c1dd" target="_blank">
+          <img src="images/vbscript.webp" alt="VBScript Issues Gist">
+          <div class="content">
+            <h3>Visual Pinball Standalone VBScript Issues</h3>
+            <p class="desc">Covers common script issues encountered when running tables on Visual Pinball Standalone.</p>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <h2 class="section-title">App Store</h2>
+    <div class="grid">
+      <article class="card">
+        <a href="https://apps.apple.com/us/app/visual-pinball/id6547859926?itscg=30200&itsct=apps_box_badge&mttnsubad=6547859926" target="_blank">
+          <img src="images/vpinball-ios.webp" alt="Visual Pinball iOS">
+          <div class="content">
+            <h3>Visual Pinball</h3>
+            <p class="desc">Visual Pinball on iOS devices, available on the App Store.</p>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <h2 class="section-title">Videos</h2>
+    <div class="grid">
+      <article class="card">
+        <a href="https://www.youtube.com/watch?v=lPe0g8RuNi8" target="_blank">
+          <img src="images/goonies-video-thumbnail.webp" alt="Goonies Video">
+          <div class="content">
+            <h3>The Goonies Never Say Die Custom Visual Pinball Machine - Batocera 39 Beta</h3>
+            <p class="desc">Demolition Man cabinet turned Goonies Never Say Die Visual Pinball machine running Batocera 39 Beta and Visual Pinball Standalone.</p>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <footer class="footer">
+      © 2023 - 2025 · Jason Millard · 
+      <script>document.write('<a href="mailto:' + 'jsm174' + '@' + 'gmail.com">' + 'jsm174' + '@' + 'gmail.com</a>');</script>
+    </footer>
+  </div>
+</body>
+</html>

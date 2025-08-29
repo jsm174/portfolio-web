@@ -1,0 +1,1191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1981 C10 Chevy Stepside Restoration</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --panel: #1a1a1a; 
+      --border: #333;
+      --text: #e5e5e5;
+      --muted: #999;
+      --brand: #ef4444;
+      --brand-700: #dc2626;
+      --radius: 12px;
+    }
+
+    body { 
+      color: var(--text);
+    }
+    
+    a { 
+      color: var(--brand);
+    }
+    
+    a:hover { 
+      color: #f87171;
+    }
+
+    .hero { 
+      padding: 40px 0 20px; 
+      text-align: center; 
+    }
+    
+    .hero h1 { 
+      font-size: clamp(28px, 3.4vw, 44px); 
+      margin: 0 0 10px; 
+      color: #fff;
+      font-weight: 700; 
+    }
+    
+    .hero .subtitle { 
+      color: var(--muted); 
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 30px; 
+    }
+
+    .section { 
+      margin-bottom: 80px; 
+    }
+    
+    .section h2 { 
+      font-size: 32px; 
+      color: var(--brand); 
+      margin-bottom: 30px; 
+      border-bottom: 2px solid var(--brand); 
+      padding-bottom: 12px;
+      font-weight: 700;
+    }
+    
+    .section h3 { 
+      font-size: 24px; 
+      color: var(--brand); 
+      margin: 40px 0 16px 0; 
+      font-weight: 600;
+    }
+    
+    .section p, .section li { 
+      line-height: 1.7; 
+      color: var(--text); 
+      font-size: 16px; 
+      margin-bottom: 16px;
+    }
+    
+    .section ul { 
+      margin-left: 24px; 
+      margin-bottom: 20px; 
+    }
+    
+    .section li { 
+      margin-bottom: 8px; 
+    }
+
+    .stats-grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+      gap: 24px; 
+      margin: 40px 0; 
+    }
+    
+    .stat-card { 
+      background: var(--panel);
+      border: 1px solid var(--border); 
+      border-radius: var(--radius); 
+      padding: 32px;
+      transition: transform .2s ease;
+    }
+    
+    .stat-card:hover {
+      transform: translateY(-2px);
+    }
+    
+    .stat-card h4 {
+      color: var(--brand);
+      margin-bottom: 16px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .gallery { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+      gap: 24px; 
+      margin: 40px 0; 
+    }
+
+    .contact { 
+      background: var(--panel); 
+      border: 1px solid var(--border); 
+      border-radius: var(--radius); 
+      padding: 50px; 
+      text-align: center; 
+      margin: 60px 0;
+    }
+    
+    .contact h2 {
+      border: none;
+      margin-bottom: 20px;
+      color: var(--brand);
+    }
+
+    .footer { 
+      text-align: center; 
+      color: var(--muted); 
+      margin: 36px 0 10px; 
+      font-size: 13px; 
+    }
+    
+    .footer a { 
+      color: var(--brand); 
+    }
+
+    @media (max-width: 768px) {
+      .section h2 {
+        font-size: 24px;
+      }
+      
+      .section h3 {
+        font-size: 20px;
+      }
+      
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="nav">
+      <div class="brand">
+        <img src="https://avatars.githubusercontent.com/u/1197137?s=400&u=dbd469b1dc8781473446afe802a554f0bbf80bf3&v=4" alt="jsm174 profile">
+        jsm174's Portfolio
+      </div>
+      <nav class="nav-menu">
+        <a href="../" class="button">← Back</a>
+        <a href="https://github.com/jsm174" target="_blank" class="button">GitHub</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>1981 C10 Chevy Stepside Restoration</h1>
+      <p>A comprehensive restoration of our Dad's 1981 Chevy Stepside</p>
+      <p>The third rendition of this truck</p>
+      <br/> 
+      <p>Authored by my brother, Tom Millard</p>
+    </section>
+
+    <main>
+      <section class="section">
+        <h2>Part 1 - Project Introduction (January 31, 2022)</h2>
+        <p>Restoration of my Brother's 1981 Chevy Stepside that our Dad bought new. This will be the third rendition of this truck!</p>
+        
+        <div class="gallery" id="part1-gallery">
+        </div>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h4>Original Specifications</h4>
+            <ul>
+              <li>1981 Chevy Custom Deluxe 1500 2WD</li>
+              <li>Purchased December 1980 from AJ Chevrolet in Moscow</li>
+              <li>Originally straight 6 with 3 on the tree trans</li>
+              <li>No radio, no power brakes, manual windows</li>
+            </ul>
+          </div>
+          
+          <div class="stat-card">
+            <h4>Round 3 Upgrades</h4>
+            <ul>
+              <li>LS3 engine with T56 transmission</li>
+              <li>Wilwood disc brakes front and rear</li>
+              <li>8.5" 10 bolt rear with Eaton posi and 3.73 gears</li>
+              <li>Complete frame powder coating</li>
+              <li>Upgraded to Silverado trim level</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 2 - Donor Cab Acquisition (February 1, 2022)</h2>
+        <p>Our Dad's friend, Walter Bonitz, brought this cab all the way from Idaho a few years back. The big block caught on fire so the owner decided to scrap the truck. So Walter removed the cab and brought it home for us. It sat covered on a trailer for several years and the mice made a real mess of things. But no worries on our end...</p>
+        
+        <div class="gallery" id="part2-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 3 - Frame and Suspension Work (February 7, 2022)</h2>
+        <p>For this project we decided to have the frame powder coated along will all of the misc brackets, etc., The original 12 bolt truck rear was replaced with an 8.5" 10 bolt with an Eaton posi and 3.73 gears and we put Wilwood disc brakes front and rear. We also rebuilt the factory Saginaw power steering box. Let me try to tag Jason Millard this time</p>
+        
+        <div class="gallery" id="part3-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 4 - Cab Compatibility Issues (February 14, 2022)</h2>
+        <p>A few things about these pics... The truck is an 81 Chevy Custom Deluxe 1500 2WD and the replacement cab came from a 85 GMC Sierra Classic 3500 4WD. The cabs are essentially the same except the 81 had a low hump floor (since it was 2WD) and the 85 had a high hump floor (since it was 4WD.) To fit a T56 in a 2WD you need to massage the floor so we decided to leave the high hump from the 4WD the way it was. The 81 cab just had a heater and the 85 had AC which was a good thing. But the mouse house material in the AC box did a number on the firewall so I had to fix that.</p>
+        
+        <div class="gallery" id="part4-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 5 - Bodywork and Rust Repair (February 21, 2022)</h2>
+        <p>Nothing too exciting in these pics, but progress is progress. The cab had one repaint before and there was a small amount of rust and filler in each cab corner. The floors and rockers were perfect, I just had to fill some holes where running boards were bolted to. So I ordered some cab corners from AMD and just cut out the pieces I needed. After the cut the rust out, I sandblasted behind the cab corner, painted it with self etching primer and then welded the new pieces in. The next update will be more exciting. Right Jason Millard?</p>
+        
+        <div class="gallery" id="part5-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 6 - Roof Replacement Challenge (March 7, 2022)</h2>
+        <p>So here's where things get interesting... The cab came off of an 85 GMC 3500 1 ton and had factory cab lights along with some added holes for a beacon and antenna of some sort. I cut out pieces and very carefully welded each hole up, making sure to keep the heat low. But the center of the cab with the 3 lights in a row warped. No enough that I couldn't fix it, but enough... In the meantime I started looking at the interior metal panel (headliner) and realized both sides (driver and passenger side) were rusted a lot worse that I thought. My best guess is that the combination of mouse house material, mouse pee and leaking drip edges contributed to this. So after much thought I decided to try to find another roof. After a quick call to our friend Kevin Lewis, we were able to locate a real nice roof. With the help of a battery powered Sawzall we cut the roof off and brought it home. In the meantime my Mom wanted us to remove the old swing set from here back yard. So we took the pieces from the old switch set and used them to brace the interior of the cab. We then cut the old roof off and vacuumed out another pile of mouse house material. Using some luan (wood) patterns for reference and taking several hundred measurements, we carefully cut the new roof to fit, made sleeves from the left over pieces and set the new roof on!</p>
+        
+        <div class="gallery" id="part6-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 7 - Roof Installation and Dash Work (March 14, 2022)</h2>
+        <p>When we last left off we just finished setting the new roof in place. To make sure everything lined up correctly, we went and took the doors off the original cab. Although the cab looks decent in the pics, it was in real tired shape and patched in the 90's when we first did the truck over. Once we were happy with everything, I welded it in place. The next thing we did was mark and drill all the holes for the interior pieces. The donor roof did not have a headliner, etc, so it made sense to drill everything now instead of after the cab was painted. Then I moved on to the dash. I drilled out all the spotwelds and removed the dash from the cab since there was some rust behind it from the mice. It was also a one ton work truck so I filled all the extra holes that were drilled along with the fuel tank switch. Last but not least we took the frame back over to my Brothers garage to make some room in mine. I also shared some more pics of the old roof just to show how badly rusted it was.</p>
+        
+        <div class="gallery" id="part7-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 8 - Surface Preparation and Primer (March 21, 2022)</h2>
+        <p>Now that the cab was done we took it to a place to have it dustless blasted. This worked out fairly well except he couldn't turn down his air pressure down low enough to do the roof so we wound up DA'ing the paint off. We definitely didn't want to take a chance and ruin this roof!!! Once it was blasted we spent some time blowing out the entire cab to get rid of any left over sand, and then I put 2 coats of epoxy primer on it.  The following week I welded the dash back in and then we sprayed the bottom of the cab with Lizard Skin which really seems to work well. That's it for now!</p>
+        
+        <div class="gallery" id="part8-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 9 - Fuel System Upgrade (March 28, 2022)</h2>
+        <p>Nothing too exciting here! We went with a TANKS gas tank with the 255gph electric fuel pump. The tank is a real nice piece but comes with a larger fill connection. The 81 stepside is a little smaller, so I decided to make my own. So I used some 1/8" flat plate and some tubing. Since this is a stepside, the fuel filler neck itself is not being reproduced. Our Dad had opened up the original neck, I'm guessing to use leaded gas back in 1981. I wanted to fix it so we wouldn't get a back splash when we filled it up. So I was able to find a replacement end online, cut the original one and welded the new one on. The hoses were replaced in the early 90's and still in nice shape so we reused them. That's it for now!</p>
+        
+        <div class="gallery" id="part9-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 10 - Round 2: The Early 90s Rebuild (May 10, 2022)</h2>
+        <p>For this installment I am going to share some throwback pictures So technically these are considered "Round 2". Our Dad originally bought the truck in December of 1980 from AJ Chevrolet in Moscow. Funny thing is that I really don't have any good pics of it from that time. It was a Custom Deluxe and very plain, no radio, no power brakes, manual windows, etc. And it had a straight 6 with a 3 on the tree trans. Our Dad added cab lights, running boards, a Lund visor, staninless vent visors and an aluminum cap over the years. And Stewart Warner tach and vacuum gauge of course! In the early 90's we redid the truck to what we thought was cool at the time, all monochromatic in GM Torch Red. Shortly thereafter we installed an 85-86 grill and then replaced the 6 cylinder with a 350 Chevy that I rebuilt along with a 350 automatic trans. The truck survived in that fashion until just a few years ago. It saw a lot of miles, a number of winters and went from our home in Covington Township to State College to Fairfax VA to Gouldsboro, to Springbrook and now its back in Covington Township again!</p>
+        
+        <div class="gallery" id="part10-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 11 - Sheet Metal Challenges (May 17, 2022)</h2>
+        <p>Well it's time for another update and I guess you have to share the good with the bad. My intent was to have everything media blasted and then epoxy primed so that the body shop would have a good surface to start with. I found a guy near Lancaster who 'specialized' in blasting antique and vintage muscle car sheet metal. Unfortunately he warped almost every piece we gave him. Just take a good look at the hood. You can see the X bracing from the top of the hood. Then to make matters worse, he didn't mix the epoxy primer correctly, shot it when it was too cold and almost a year later it still was never fully dried. This was all originally GM sheet metal... our Dad bought the doors from Aj's in Moscow, the hood and pass fender came from Philly and the rear step side fenders came from the Hershey flea market about 20 years ago. Although this was disheartening, we are still moving forward... So the next post will be better!!!</p>
+        
+        <div class="gallery" id="part11-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 12 - Finding Replacement Sheet Metal (July 5, 2022)</h2>
+        <p>When we last left off we had just picked up all of our warped sheet metal. So immediately we started looking for replacement GM sheet metal. On FB market place we were able to find a nice original hood in Harvey Lake. This hood still had its original paint, but we decided to strip it by hand with paint stripper. We started with the underneath but only sanded that by hand so that the stripper would not get under the seams or x bracing and cause a problem with reacting with the paint in the future. Then we flipped it and after several coats of the stripper we were finally able to finish it up with the DA. Last but not least we drilled the hole for the factory hood ornament. Once the hood was done we moved onto the doors. I was able to find a nice pair just south of Philly. So after another road trip we brought those home and started cleaning them up. The paint stripper really didn't touch the paint on these doors so we had to carefully use the DA to get them down to bare metal. Again we hand sanded the inside of the doors. All of this work took a few weekends but at least we were moving forward!</p>
+        
+        <div class="gallery" id="part12-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 13 - Fender Hunt (August 8, 2022)</h2>
+        <p>When we last left off we just finished up getting the replacement doors and hood ready for the body shop. So that last thing we needed was a nice set of fenders. After making a number of phone calls and searching FB Marketplace, I was able to find a pair in Connecticut. They were supposedly taken off a truck from the Carolina's. So Jason and I left about 3 in the afternoon and made the 4 hour ride. When we got close we called the guy who told us to park next a rusty Cuda. Well by the time we got there it was dark but not dark enough to see the holes in the roof of the Cuda. Total swiss cheese... The fenders weren't perfect but we loaded them up and took them home. We wound up DA'ing most of the paint off but quickly realized they needed a little sandblasting in spots and we discovered some filler... ugh... The door on my cabinet was a little too small for the fender to fit through but my friend Rick had a larger cabinet. It turned there were pin holes on the bottom edge and 2 other spots. Ugh... So I made some pieces to fit the bottom edges and then used some others fenders I had for pieces. (These fenders weren't really salvageable...) Well that's if for now!</p>
+        
+        <div class="gallery" id="part13-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 14 - Final Sheet Metal Preparation (August 25, 2022)</h2>
+        <p>When we last left off I had just finished fixing the front fenders and getting them ready for the body shop. So the last few things I needed to get ready were the cowl valence and the filler piece that goes under the grill but just above the bumper. I needed to strip the epoxy primer off of them, so I wound up lightly sandblasting them in my cabinet. And I made a real mess since they were too long for the cabinet. But at least I was able to finish them. So at that time we loaded up everything from the cab forward and took them to the shop. Once I dropped those parts off, we started looking at the new bedsides we got from Mar-K. Ours were pretty rusty so we bought the front section, the 2 sides and a tailgate. These parts are really nice and are made right here in the USA. We opted to go with the stainless straps for the tailgate instead of the factory chains (so as not to scratch anything, etc...) The first set of straps they sent us were too short but they quickly sent us the correct ones. I picked up the rear step side fenders at Hersey probably 20+ years ago and last year I scored an NOS pair of steps o</p>
+        
+        <div class="gallery" id="part14-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 15 - AC System Restoration (September 9, 2022)</h2>
+        <p>Once the cab and front end were at the body shop, we started working on some other items for the truck. One big item was the AC box and components. The original cab only had heat but the donor cab had AC. But the problem is that the mice destroyed the original AC box (at least the part under the dash). If you remember when we were working on the cab, I had to replace the steel at the bottom of the AC box since it was rusted through from mouse pee. Well the inside of the AC box was in similar shape.. the mice chewed through the plastic flaps and all the controls were rusted up tight. But fortunately I was able to find a guy through FB that had a nice clean box. We wound up buying a new blower motor, heater core, evaporator, accumulator and a nice repop Harrison decal. After lots of elbow grease and some Meguiars 'Back to Black', both the inside and outside parts for the AC looked like new. Well that's it for now...</p>
+        
+        <div class="gallery" id="part15-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 16 - Headlight Upgrade (September 16, 2022)</h2>
+        <p>Ok it's time for another installment of progress pics. This truck was originally a Custom Deluxe so it had the larger single headlights with the turn signals in the bumper which GM used in 81 and 82. Jason bumped a deer not long after it was repainted in the early nineties and at that time we put in a grill from a 1986 Custom Deluxe. But this time around we wanted to upgrade to a Silverado which meant a total of 4 headlights. The radiator support that was on the donor truck was almost perfect but there was some deep pttting on the top, near the hood latch. Since Jason wanted this powder coated, I located another radiator support down in Pine Grove. The support was in nice shape but there was some rust underneath where the battery tray sits, which is common., So I made a piece to fix it, welded it in, and then it went to get powder coated. When we got it back, we installed new headlights, all new hardware, and a universal condenser for the AC. The factory replacements do not fit at all so I felt it was best to use the universal one. Once everything was installed on the radiator support we set it on the frame for safe keeping.</p>
+        
+        <div class="gallery" id="part16-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 17 - Custom Battery Tray (October 18, 2022)</h2>
+        <p>Ok it's time for another update. When we last left off we had finished working on the radiator support. Another item I needed to figure out was the battery tray. Most of these trucks have the batteries located on the passenger side, unless they were diesels. Diesel truck had (2) battery trays, one on the driver side and one on the passenger side. Most C10 guys that do LS swaps wind up using the driver side battery tray so that the air box can go on the passenger side. I liked this idea and thought it would work well but with the pandemic no driver side trays were available. And since all of the aftermarket ones are made overseas, I decided to make my own using a decent pass side top section. The trays are identical except the lower mounting points are mirrored. So I made a cardboard pattern and made a total of 2 (one for my K30 dump in the future...) After cutting and bending the new bottom piece, I drilled out the spot welds from the decent pass side and then sandblasted the tray. Then I spot welded it to the new bottom piece and sandblasted the entire piece. Then it went in the pile of parts to get powder coated. That's it for now! More exciting pics to follow soon!</p>
+        
+        <div class="gallery" id="part17-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 18 - Paint and Cab Installation (November 1, 2022)</h2>
+        <p>Ok it's time for some more progress pics. After we had dropped the front fenders off at the shop they wanted Jason to pick a color. For some time he discussed a 2015 Tahoe burgundy but the problem was that it was a tricoat color, and difficult to match. So after some time he settled on a 2018 GMC color which was base coat / clear coat. Not long after that we got the call that the cab was done and ready to be picked up. This was last winter and the roads were a mess so we were able to use a box truck to pick it up. Since the lift gate was narrow, we had to put the cab in straight and not sideways. And to make sure it didn't move around we added a ton of straps. Once it was home we unloaded it with the forklift and rolled it in the garage. Then we started with installing Dynamat and then the heater/ac box. So that's it for now!</p>
+        
+        <div class="gallery" id="part18-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 19 - Cab on Frame (November 15, 2022)</h2>
+        <p>Time for another update! Once we were done with installing the Dynamat in the cab and the heater/ac box, we decided it was time to set the cab back on the frame. So we moved the frame out of storage and dug the forklift out to help set the cab on. So with the help of the forklift, Jason, Mike and a bunch of towels, we carefully set the cab on and bolted it in place. Once we were done with that we pushed it back in the garage and started working on installing the new Painless Wire harness. In the meantime I also ordered a hydraulic clutch master cylinder set up from Bowler Transmission. This bolted right in place of the factory master cylinder but has the correct bore diameter and throw to work with the GM hydraulic bearing for the T56 trans. I also had to fabricate a bracket to hold the master cylinder reservoir for the clutch. Once the bracket was done I painted a handful of items gloss back, including the brake power booster. Our goal is to keep under the hood as 'GM' as possible but I did wind up buying a Wilwood master cylinder for the brakes since we are using their discs in all 4 corners. That's it for now!</p>
+        
+        <div class="gallery" id="part19-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 20 - Steering Column and Window Restoration (December 13, 2022)</h2>
+        <p>In my last update we just set the cab on the frame and Dyamatted the inside. We also bolted the power booster on and installed the Wilwood master cylinder. At that time I decided it was time to pull the 454 out so both Jason and Mike helped guide it out. After that I spent some time polishing the stainless on the drip rails and then installing them. To keep moving forward with the cab I decided to go through the steering column. Fortunately the donor cab had the 'holy grail' of steering columns, it was a tilt without a column shift. I disassembled everything, cleaned it, painted the plastic parts with SEM satin black and then reassembled it. This column was still nice and tight so I didn't need to replace anything. We worked on the rear sliding window. At first we were going to go with an aftermarket 3 panel slider but none were available. So we decided to use a factory GM 4 panel slider. We were able to make (1) really nice slider out of (3) original ones since there were issues with water spots/staining and the aluminum pieces the latches bolt to. But it really came out nice so we installed by reusing a real nice window seal and some new chrome lock strip. And last but not least I picked up front fenders and cowl from the body shape. That's it for now!</p>
+        
+        <div class="gallery" id="part20-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 21 - Instrument Cluster and Engine Mock-up (January 4, 2023)</h2>
+        <p>Hope everyone enjoyed the Holidays! About 20 years ago I scored a nice instrument cluster out of a mid 80's 1 ton wrecker that had a factory tach in it. I have been saving it for Jason's truck and finally dug it out. I was also able to locate another cluster out of a 91 Blazer that had an electronic speedometer. I knew we could control the electronic speedo with the GM connect and cruise wiring so I modified the factory tach housing to fit the electronic speedo. To finish it up, Jason made a cover with his 3D printer for the speedo circuit board and I installed new LED bulbs. We did get a new clear plastic cover piece but that won't be installed until the very end. Since the LS3 was back ordered indefinitely, we borrowed a block from a good friend of ours. This was a core from an '02 GTO that had a big hole in the side of it from a rod that decided to exit. Again, Jason and Mike helped guide it in and set it in place with Tejas mounts. We also mocked up some mid 2000's Chevy truck LS accessory brackets. While we were waiting for the T56 trans to be delivered, we spent some time getting the front and rear bumpers ready. When the trans finally showed up bolted everything together and mocked it up behind the core LS block. Once I was happy with the location, we converted the trans to a mid shift (from Tick) and then cut the hole in the floor. A while back we had the bench seat recovered with a USA1 cover so Maddie and I brought that up and set in in place. With the seat bolted in, I was able to make a mock up of a Hurst shifter handle that was made for the 89 and up Chevy trucks. This fit really well and cleared the bench seat. So that's it for now!!!</p>
+        
+        <div class="gallery" id="part21-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 22 - Windshield and Accessories (January 10, 2023)</h2>
+        <p>Ok we have a handful of things going on in our latest update. First our friend Jeff Gretz came up and installed the new windshield. This one has the antenna in it which still works really well. Instead of running headers we decided to go with Hooker 2 1/2" cast iron manifolds and my nephew Alex installed them. They are fairly tight to the block and provide a lot of clearance around the frame. While Alex was working on the manifolds we worked on the cowl. The problem is that the plastic alignment pins were brittle and not available, so Jason made several with his 3D printer. In the meantime the 18" American Racing Salt Flat wheels arrived so we had the new tires mounted on them. We quickly realized the rear studs were too short so I wound up drilling the axles and pressing in longer studs. After a quick test fit of the new wheels and tires we rolled it outside to get a better look at it. Last but not least we started testing fitting all the accessories on the mock up motor. We used mid 2000's Chevy truck brackets for the alternator and power steering pump, a 2008 Camaro water pump, Dirty Dingo idler puller relocation kits and their lower AC comp mount. Then we used a 2005 Corvette upper radiator hose along with a mid 2000's Chevy truck lower radiator hose. Once all the accessories were on we were able to get the correct serpentine belts from Napa. Well that's it for now!!!</p>
+        
+        <div class="gallery" id="part22-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 23 - Interior Completion (January 24, 2023)</h2>
+        <p>And it's time for another update... While waiting on the engine, we shifted our focus over to the interior. The truck was originally a Custom Deluxe and we were upgrading everything to a Silverado. Most of the plastic interior pieces in the donor cab were rough so I wound up buying some nice original stuff on eBay (like the kick panels and headliner trim) and some other reproduction parts (like the B pillar trim.) USA1 sells the correct paint (81-83 Carmine Red) and it actually matches fairly well. Once all the parts were painted we set everything off to the side and then started working on the back of the cab, behind the seat. I bought 6x9 sheet metal brackets but decided to add to back them with 3/4" plywood for some substance. Then I upholstered them in the same vinyl as the back of the seat. I also made a panel to cover the exposed sheet metal in the back of the cab. This tied in very well with the speaker brackets. Then we installed the carpet and set the seat in place. So that's it for now!!!</p>
+        
+        <div class="gallery" id="part23-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 24 - The LS3 Arrives (February 14, 2023)</h2>
+        <p>Good news! Good news! The LS3 finally came in!!! I called Pace to talk about the invoice for the transmission and when I asked about the motor they said one just came in. Now keep in mind I was calling them once a month asking for an update. So within a few days the motor was delivered. Of course it was in the middle of the day and they were tar and chipping the road in front of my house, but fortunately Jason was able to meet the driver elsewhere and they slide it in the back of his truck. Once everything was unloaded and uncrated, we changed the oil pan and windage tray in order to clear the cross member. We wound up taking the painted the fenders off and putting them off to the side for safe keeping. Then with the help of Jason, Alex and Mike, the new motor was finally set in the frame. Then we reinstalled the trans and then hung an old driver side fender. I needed to fabricate a bracket for the LS3 computer and fuse box and I didn't want to take a chance and scratch the new fender. In the meantime I was able to install the GM connect and cruise wiring harness and started working on a clean way to route the wires. So that's it for now!</p>
+        
+        <div class="gallery" id="part24-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 25 - Exhaust and Air Intake (March 16, 2023)</h2>
+        <p>Ok time for another update!!! When we last left off the new LS3 was set in the truck and we were making good progress in running the wiring, fuse box, etc. In the meantime, I started working on the exhaust. We used Hooker LS cast iron 2 1/2" manifolds and had them ceramic coated. Once the manifolds were on the motor we used a set of Holley intermediate pipes to connect up a set of SS pipes from Speed engineering. The intermediate pipes were too short so we wound up cutting and modifying everything. I picked up a roll of .023" SS wire for the mig and tacked everything together, and then our good friend Kevin tig welded everything. We still have to finish the tailpipes and will work on the shortly. We also made the air intake tube from aluminum tubing and again Kevin tig welded it for us along with the mass air flow sensor fitting and PVC connection. For the air cleaner, we used a new GM air box from a late model truck, picked up a base from a Tahoe and then modified the base from the original pass side battery tray. We also picked up some fuel lines and AN fittings and used a Corvette style filter / regulator. Well that's it for now!</p>
+        
+        <div class="gallery" id="part25-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 26 - First Start and Shakedown (April 20, 2023)</h2>
+        <p>Time for a long overdue update!!! When we last left off we were roughing the new motor in. Once we were finished with that, along with our friend Mike, we installed the doors, fenders and hood. After all the sheet metal was hung and aligned, I took the inner fenders we had powder coated, scuffed the insides of them and then lizard skinned them. Then I spent some time buffing all the stainless trim for the grill and installed those pieces along with the correct 81 Silverado grill shell and NOS front bumper we scored off eBay a number of years back. At that point we felt it was time to turn the key. And funny thing is the truck started right up!!! By the next day we had it moving in and out of the garage under it's own power. Our Mom even stopped by to check out our progress (and deliver our weekly Saturday lunch!!!) Good times!!!</p>
+        
+        <div class="gallery" id="part26-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 27 - Door and Dash Assembly (July 6, 2023)</h2>
+        <p>When we last left off we just started the truck for the first time and we were able to move it under it's own power. Once we tied up some loose ends under the hood we started working on the doors. I scored a nice set of stainless OEM mirrors off FB a while back and these were off a little newer squarebody since the pass side mirror was convex (which is a good thing...) I spent some time buffing the stainless and then we installed them. Then we gathered all the misc parts for the inside of the doors, including the vent windows, door glass, power window motors, power door locks, handles, etc. We disassembled everything, had all the brackets powder coated and then reassembled everything with new parts (window motors, etc.) We also rebuilt the vent windows with all new weatherstripping, etc. Then we finished all the wiring within the doors and added relays within the doors for the power window motors. Then we installed new door panels from USA1 along with the carpeted bottom pieces. Last but not least, we installed the new dash pad. This was not plug and play by any means. We spent a lot of time trimming and sanding to make it fit right. The brackets for the dash bezel were non existent so we made our own. It was 2 Saturdays worth of work but at the end of the day it fit well. So that's it for now!</p>
+        
+        <div class="gallery" id="part27-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 28 - Electronics and Drive Testing (August 28, 2023)</h2>
+        <p>In our last post we just finished up most of the interior. One of the last pieces that needed to be done though was the installation of the radio. We went with a Pioneer radio that had a slide out touch screen with Car Play. Then came up with a creative way to keep the single din radio in place without bending the tabs of the cage in. A luck would have it, we had to remove the instrument cluster a few times so this worked in our favor. Then we finished up the tailpipe design and our good friend Kevin welded them up for us. Once they were welded we came up with some mounting brackets to keep them nice and straight under the rear bumper. At that point I decided to fabricate a driveshaft loop with some 6" pipe, just in case we lost a front u-joint. A while back I had rebuilt the original Saginaw steering box but I wound up with a leak I couldn't chase. We decided to replace with a quick ratio Borgeson box which fit very well and is nice and tight. Looking back, I believe we may have had an issue with one of the metric O ring conversion fittings. But that's another story! We also used an electronic speedo from a 91-92 Blazer/Suburban and Jason came up with a way to test it with a cheap Amazon frequency /pulse generator. And last but not least, we drove it a few miles around my front yard. That's it for now!!!</p>
+        
+        <div class="gallery" id="part28-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 29 - Wood Bed Kit Installation (September 4, 2023)</h2>
+        <p>We received a call that the bed parts were done so we took a quick trip to pick them up. In the meantime Jason dug out the oak wood kit he purchased through Mar-K. He also picked out a stain over at the hardware store and then I ordered a marine spar varnish kit through Mar-K. Funny thing is that the stain didn't look anything like the pic on the can but it actually looks really good against the body color. After it was stained we put 6 coats of varnish on the wood which took some time since each coat had to dry for at least 24 hours. Once everything was good and dry we assembled the entire bed and then set it on the frame. The back still sat a little too high so I wound up ordering a set of 2" drop front spring hangers for the rear springs. With the dropped shackles in the back, this leveled the truck right out and also helped bring out pinion angle in line. Last but not least we made a set of 18 gauge stainless heat shields to protect the wood from the tailpipes. And of course after that we put a few more miles on around the yard. So that's it for now!</p>
+        
+        <div class="gallery" id="part29-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 30 - Final Assembly and Alignment (October 9, 2023)</h2>
+        <p>So now we are on the home stretch!!! Shortly after we installed the bed we received another call from the shop that the rear fenders, steps and tailgate were done. I knew I wanted some type of gasket between the rear fenders, steps and bed. We tried the typical windlace molding that you would use on street rod fenders but that didn't really work too well. So we wound up using regular gasket material from Napa. It took some time to install it but it worked really well. Once that was done we moved over to the tailgate. We didn't want to use the stock tailgate with the chains, so we upgraded to the Mar-K gate that uses mini bear claw latches and stainless straps. This is really a clean setup and we were happy with it. To prevent any dings in the rear fenders from rocks, etc, we put 4 coats of Lizard Skin under them. I like this over using undercoating, etc, and it dries to a nice satin finish that isn't rubbery. After that was dry we installed the rear fender braces that we had powder coated a while back and then trailered it to our friend Rick's garage. Rick along with his sons and friends helped us line the truck up. Once the truck was back home, we installed the front inner fender splash aprons and then put it on the lift to do a once over of everything underneath. So that's it for now!!! Stay tuned for another update!!!</p>
+        
+        <div class="gallery" id="part30-gallery">
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Part 31 - Final Resolution and Completion (May 29, 2024)</h2>
+        <p>Looks like I'm way overdue for an update on the stepside. When we last left off we just about had everything finished up. Once the front end was lined up we started taking short trips with it and quickly realized that after a quarter mile or so the engine would go into limp mode. Sometimes it would throw a code, sometimes it wouldn't. The codes all said there was an issue with the MAF sensor. We tried several different new sensors and did a ton of data logging. The one Saturday we decided to remove the air filter from the housing. There was an instant improvement almost to the point where we didn't believe it. So we came back to the garage, put the air filter back in the housing, and sure enough the engine went into limp mode within 1/4 mile of the house. So it turns out we were getting turbulence in the 4" tube where the MAF was installed. A $25 stainless honeycomb air straightener did the trick and solved that problem. That was in the fall before the weather turned. Over the winter we tied up a handful of loose ends. We had a bunch of parts powder coated including a 4" plate we made to replace the factory 'gravel guard' that mounted on top of the rear bumper brackets. We also picked up a new 'box' from Mark-K that is made to fit in the bed. The back panel matches the 'racetrack' in the tailgate. After the body shop painted it we assembled it and installed it. This sure helps with the limited space in the cab. Once that was done we gave it a good bath and then patiently waited for dry weather. After a long 2 weeks, I was finally able to take the inaugural trip to my office and then to the body shop for their seal of approval. Then I took it to the cruise at the mall and of course to Church... So far everything seems to work well and I'm sure we'll be putting a number of miles on it this summer, enjoying every minute of it!!!</p>
+        
+        <div class="gallery" id="part31-gallery">
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      © 2023 - 2025 · Jason Millard · 
+      <script>document.write('<a href="mailto:' + 'jsm174' + '@' + 'gmail.com">' + 'jsm174' + '@' + 'gmail.com</a>');</script>
+    </footer>
+
+    <script>
+      // Multi-gallery configuration for individual parts
+      const galleryConfigs = {
+        'part1-gallery': {
+          items: [
+            { type: "image", src: "part1/81-c10-stepside-part1-1.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-2.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-3.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-4.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-5.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-6.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-7.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-8.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-9.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-10.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-11.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-12.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-13.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-14.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-15.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-16.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-17.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-18.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-19.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-20.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-21.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-22.webp" },
+            { type: "image", src: "part1/81-c10-stepside-part1-23.webp" }
+          ]
+        },
+        'part2-gallery': {
+          items: [
+            { type: "image", src: "part2/81-c10-stepside-part2-1.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-2.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-3.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-4.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-5.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-6.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-7.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-8.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-9.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-10.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-11.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-12.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-13.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-14.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-15.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-16.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-17.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-18.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-19.webp" },
+            { type: "image", src: "part2/81-c10-stepside-part2-20.webp" }
+          ]
+        },
+        'part3-gallery': {
+          items: [
+            { type: "image", src: "part3/81-c10-stepside-part3-1.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-2.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-3.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-4.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-5.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-6.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-7.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-8.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-9.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-10.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-11.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-12.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-13.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-14.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-15.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-16.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-17.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-18.webp" },
+            { type: "image", src: "part3/81-c10-stepside-part3-19.webp" }
+          ]
+        },
+        'part4-gallery': {
+          items: [
+            { type: "image", src: "part4/81-c10-stepside-part4-1.webp" },
+            { type: "image", src: "part4/81-c10-stepside-part4-2.webp" },
+            { type: "image", src: "part4/81-c10-stepside-part4-3.webp" },
+            { type: "image", src: "part4/81-c10-stepside-part4-4.webp" },
+            { type: "image", src: "part4/81-c10-stepside-part4-5.webp" },
+            { type: "image", src: "part4/81-c10-stepside-part4-6.webp" },
+            { type: "image", src: "part4/81-c10-stepside-part4-7.webp" },
+            { type: "image", src: "part4/81-c10-stepside-part4-8.webp" },
+            { type: "image", src: "part4/81-c10-stepside-part4-9.webp" },
+            { type: "image", src: "part4/81-c10-stepside-part4-10.webp" }
+          ]
+        },
+        'part5-gallery': {
+          items: [
+            { type: "image", src: "part5/81-c10-stepside-part5-1.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-2.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-3.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-4.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-5.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-6.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-7.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-8.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-9.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-10.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-11.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-12.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-13.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-14.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-15.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-16.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-17.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-18.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-19.webp" },
+            { type: "image", src: "part5/81-c10-stepside-part5-20.webp" }
+          ]
+        },
+        'part6-gallery': {
+          items: [
+            { type: "image", src: "part6/81-c10-stepside-part6-1.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-2.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-3.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-4.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-5.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-6.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-7.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-8.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-9.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-10.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-11.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-12.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-13.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-14.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-15.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-16.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-17.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-18.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-19.webp" },
+            { type: "image", src: "part6/81-c10-stepside-part6-20.webp" }
+          ]
+        },
+        'part7-gallery': {
+          items: [
+            { type: "image", src: "part7/81-c10-stepside-part7-1.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-2.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-3.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-4.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-5.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-6.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-7.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-8.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-9.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-10.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-11.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-12.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-13.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-14.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-15.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-16.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-17.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-18.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-19.webp" },
+            { type: "image", src: "part7/81-c10-stepside-part7-20.webp" }
+          ]
+        },
+        'part8-gallery': {
+          items: [
+            { type: "image", src: "part8/81-c10-stepside-part8-1.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-2.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-3.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-4.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-5.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-6.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-7.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-8.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-9.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-10.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-11.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-12.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-13.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-14.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-15.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-16.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-17.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-18.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-19.webp" },
+            { type: "image", src: "part8/81-c10-stepside-part8-20.webp" }
+          ]
+        },
+        'part9-gallery': {
+          items: [
+            { type: "image", src: "part9/81-c10-stepside-part9-1.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-2.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-3.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-4.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-5.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-6.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-7.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-8.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-9.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-10.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-11.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-12.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-13.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-14.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-15.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-16.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-17.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-18.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-19.webp" },
+            { type: "image", src: "part9/81-c10-stepside-part9-20.webp" }
+          ]
+        },
+        'part10-gallery': {
+          items: [
+            { type: "image", src: "part10/81-c10-stepside-part10-1.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-2.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-3.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-4.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-5.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-6.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-7.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-8.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-9.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-10.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-11.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-12.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-13.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-14.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-15.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-16.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-17.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-18.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-19.webp" },
+            { type: "image", src: "part10/81-c10-stepside-part10-20.webp" }
+          ]
+        },
+        'part11-gallery': {
+          items: [
+            { type: "image", src: "part11/81-c10-stepside-part11-1.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-2.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-3.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-4.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-5.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-6.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-7.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-8.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-9.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-10.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-11.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-12.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-13.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-14.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-15.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-16.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-17.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-18.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-19.webp" },
+            { type: "image", src: "part11/81-c10-stepside-part11-20.webp" }
+          ]
+        },
+        'part12-gallery': {
+          items: [
+            { type: "image", src: "part12/81-c10-stepside-part12-1.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-2.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-3.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-4.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-5.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-6.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-7.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-8.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-9.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-10.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-11.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-12.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-13.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-14.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-15.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-16.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-17.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-18.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-19.webp" },
+            { type: "image", src: "part12/81-c10-stepside-part12-20.webp" }
+          ]
+        },
+        'part13-gallery': {
+          items: [
+            { type: "image", src: "part13/81-c10-stepside-part13-1.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-2.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-3.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-4.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-5.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-6.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-7.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-8.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-9.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-10.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-11.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-12.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-13.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-14.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-15.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-16.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-17.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-18.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-19.webp" },
+            { type: "image", src: "part13/81-c10-stepside-part13-20.webp" }
+          ]
+        },
+        'part14-gallery': {
+          items: [
+            { type: "image", src: "part14/81-c10-stepside-part14-1.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-2.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-3.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-4.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-5.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-6.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-7.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-8.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-9.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-10.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-11.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-12.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-13.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-14.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-15.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-16.webp" },
+            { type: "image", src: "part14/81-c10-stepside-part14-17.webp" }
+          ]
+        },
+        'part15-gallery': {
+          items: [
+            { type: "image", src: "part15/81-c10-stepside-part15-1.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-2.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-3.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-4.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-5.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-6.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-7.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-8.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-9.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-10.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-11.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-12.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-13.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-14.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-15.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-16.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-17.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-18.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-19.webp" },
+            { type: "image", src: "part15/81-c10-stepside-part15-20.webp" }
+          ]
+        },
+        'part16-gallery': {
+          items: [
+            { type: "image", src: "part16/81-c10-stepside-part16-1.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-2.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-3.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-4.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-5.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-6.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-7.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-8.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-9.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-10.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-11.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-12.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-13.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-14.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-15.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-16.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-17.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-18.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-19.webp" },
+            { type: "image", src: "part16/81-c10-stepside-part16-20.webp" }
+          ]
+        },
+        'part17-gallery': {
+          items: [
+            { type: "image", src: "part17/81-c10-stepside-part17-1.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-2.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-3.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-4.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-5.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-6.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-7.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-8.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-9.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-10.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-11.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-12.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-13.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-14.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-15.webp" },
+            { type: "image", src: "part17/81-c10-stepside-part17-16.webp" }
+          ]
+        },
+        'part18-gallery': {
+          items: [
+            { type: "image", src: "part18/81-c10-stepside-part18-1.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-2.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-3.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-4.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-5.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-6.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-7.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-8.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-9.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-10.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-11.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-12.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-13.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-14.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-15.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-16.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-17.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-18.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-19.webp" },
+            { type: "image", src: "part18/81-c10-stepside-part18-20.webp" }
+          ]
+        },
+        'part19-gallery': {
+          items: [
+            { type: "image", src: "part19/81-c10-stepside-part19-1.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-2.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-3.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-4.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-5.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-6.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-7.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-8.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-9.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-10.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-11.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-12.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-13.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-14.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-15.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-16.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-17.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-18.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-19.webp" },
+            { type: "image", src: "part19/81-c10-stepside-part19-20.webp" }
+          ]
+        },
+        'part20-gallery': {
+          items: [
+            { type: "image", src: "part20/81-c10-stepside-part20-1.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-2.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-3.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-4.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-5.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-6.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-7.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-8.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-9.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-10.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-11.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-12.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-13.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-14.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-15.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-16.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-17.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-18.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-19.webp" },
+            { type: "image", src: "part20/81-c10-stepside-part20-20.webp" }
+          ]
+        },
+        'part21-gallery': {
+          items: [
+            { type: "image", src: "part21/81-c10-stepside-part21-1.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-2.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-3.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-4.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-5.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-6.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-7.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-8.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-9.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-10.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-11.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-12.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-13.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-14.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-15.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-16.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-17.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-18.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-19.webp" },
+            { type: "image", src: "part21/81-c10-stepside-part21-20.webp" }
+          ]
+        },
+        'part22-gallery': {
+          items: [
+            { type: "image", src: "part22/81-c10-stepside-part22-1.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-2.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-3.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-4.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-5.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-6.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-7.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-8.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-9.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-10.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-11.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-12.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-13.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-14.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-15.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-16.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-17.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-18.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-19.webp" },
+            { type: "image", src: "part22/81-c10-stepside-part22-20.webp" }
+          ]
+        },
+        'part23-gallery': {
+          items: [
+            { type: "image", src: "part23/81-c10-stepside-part23-1.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-2.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-3.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-4.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-5.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-6.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-7.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-8.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-9.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-10.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-11.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-12.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-13.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-14.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-15.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-16.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-17.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-18.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-19.webp" },
+            { type: "image", src: "part23/81-c10-stepside-part23-20.webp" }
+          ]
+        },
+        'part24-gallery': {
+          items: [
+            { type: "image", src: "part24/81-c10-stepside-part24-1.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-2.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-3.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-4.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-5.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-6.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-7.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-8.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-9.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-10.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-11.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-12.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-13.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-14.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-15.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-16.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-17.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-18.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-19.webp" },
+            { type: "image", src: "part24/81-c10-stepside-part24-20.webp" }
+          ]
+        },
+        'part25-gallery': {
+          items: [
+            { type: "image", src: "part25/81-c10-stepside-part25-1.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-2.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-3.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-4.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-5.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-6.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-7.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-8.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-9.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-10.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-11.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-12.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-13.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-14.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-15.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-16.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-17.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-18.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-19.webp" },
+            { type: "image", src: "part25/81-c10-stepside-part25-20.webp" }
+          ]
+        },
+        'part26-gallery': {
+          items: [
+            { type: "image", src: "part26/81-c10-stepside-part26-1.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-2.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-3.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-4.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-5.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-6.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-7.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-8.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-9.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-10.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-11.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-12.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-13.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-14.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-15.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-16.webp" },
+            { type: "image", src: "part26/81-c10-stepside-part26-17.webp" }
+          ]
+        },
+        'part27-gallery': {
+          items: [
+            { type: "image", src: "part27/81-c10-stepside-part27-1.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-2.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-3.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-4.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-5.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-6.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-7.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-8.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-9.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-10.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-11.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-12.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-13.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-14.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-15.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-16.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-17.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-18.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-19.webp" },
+            { type: "image", src: "part27/81-c10-stepside-part27-20.webp" }
+          ]
+        },
+        'part28-gallery': {
+          items: [
+            { type: "image", src: "part28/81-c10-stepside-part28-1.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-2.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-3.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-4.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-5.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-6.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-7.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-8.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-9.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-10.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-11.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-12.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-13.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-14.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-15.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-16.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-17.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-18.webp" },
+            { type: "image", src: "part28/81-c10-stepside-part28-19.webp" }
+          ]
+        },
+        'part29-gallery': {
+          items: [
+            { type: "image", src: "part29/81-c10-stepside-part29-1.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-2.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-3.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-4.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-5.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-6.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-7.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-8.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-9.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-10.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-11.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-12.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-13.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-14.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-15.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-16.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-17.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-18.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-19.webp" },
+            { type: "image", src: "part29/81-c10-stepside-part29-20.webp" }
+          ]
+        },
+        'part30-gallery': {
+          items: [
+            { type: "image", src: "part30/81-c10-stepside-part30-1.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-2.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-3.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-4.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-5.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-6.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-7.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-8.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-9.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-10.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-11.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-12.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-13.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-14.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-15.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-16.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-17.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-18.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-19.webp" },
+            { type: "image", src: "part30/81-c10-stepside-part30-20.webp" }
+          ]
+        },
+        'part31-gallery': {
+          items: [
+            { type: "image", src: "part31/81-c10-stepside-part31-1.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-2.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-3.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-4.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-5.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-6.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-7.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-8.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-9.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-10.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-11.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-12.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-13.webp" },
+            { type: "image", src: "part31/81-c10-stepside-part31-14.webp" }
+          ]
+        }
+      };
+    </script>
+    <script src="../shared/navigation.js"></script>
+    <script src="../shared/gallery.js"></script>
+  </div>
+</body>
+</html>
